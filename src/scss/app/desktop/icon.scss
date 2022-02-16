@@ -1,0 +1,48 @@
+.icon-logo, .icon-logo-name {
+  font-size: 36px;
+}
+
+.icon-logo {
+  margin-right: 14px;
+}
+
+.icon-info {
+  color: $color-white;
+}
+
+
+.icon-message {
+  color: $color-green;
+}
+
+.box-clock {
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.icon-phone-call {
+  color: #119A1A;
+}
+
+.icon-search {
+  color: $color-green;
+}
+
+.icon-missed-call {
+
+  &--red {
+    color: #FF2300;
+  }
+}
+
+.icon-phone {
+  color: $color-green;
+}
+
+.icon-phone-missed {
+  color: #FF2300;
+}
+
+.icon-phone-outgoing {
+  color: #0636F6;
+}

@@ -1,0 +1,170 @@
+.page {
+
+  min-height: 100vh;
+
+  &--border {
+    border-right: 1px solid #ECECEC;
+  }
+
+  &__header {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-main {
+  padding: 71px 24px 40px 24px;
+
+  &__content {
+    height: 75vh;
+    overflow: auto;
+  }
+
+  &--pt {
+    padding-top: 32px;
+  }
+}
+
+.page-chat {
+  padding: 0;
+
+  &--mr {
+    margin-top: 47px;
+  }
+
+
+  &__message {
+    padding-left: 24px;
+    padding-right: 40px;
+    border-bottom: 1px solid #ECECEC;
+  }
+
+  &__call {
+    padding-left: 24px;
+    padding-right: 40px;
+    margin-top: 26px;
+
+
+    & .icon-phone {
+      font-size: 20px;
+    }
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 33px;
+  }
+}
+
+.page-user {
+
+  &__account {
+    display: flex;
+    align-items: center;
+
+    & span, img {
+      margin-right: 10px;
+    }
+
+  }
+}
+
+.page-header {
+
+  &--fixed {
+    position: fixed;
+    width: 75%;
+  }
+}
+
+
+.add-new {
+  padding: 12px 15px;
+  color: $color-green;
+  font-family: $medium;
+  font-size: 16px;
+  //transition: all 0.5s ease-in-out;
+
+
+  background: linear-gradient(to right, $color-green 50%, $color-white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all .5s ease-out;
+
+  &:hover {
+    background-color: $color-green;
+    border-radius: 14px;
+    color: $color-white;
+    background-position: left bottom;
+  }
+}
+
+
+///// popup style
+
+
+.main-content {
+  height: 800px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.overlay-bg {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  z-index: 1000; /* high z-index */
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay-content {
+  display: none;
+  background: $color-white;
+  padding: 33px 39px 32px 41px;
+  width: 40%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: default;
+  z-index: 10001;
+  border-radius: 14px;
+}
+
+.close-btn {
+}
+
+.popup1 {
+
+}
+
+
+/////////// input animation
+
+
+
+
+///////////////
+.see-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: $color-green;
+
+  & > img {
+    margin-right: 9px;
+  }
+
+  &--mr {
+    margin-bottom: 26px;
+  }
+}

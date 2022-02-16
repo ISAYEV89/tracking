@@ -1,0 +1,183 @@
+.group {
+  position: relative;
+  width: calc(50% - 20px);
+
+  &--mb {
+    margin-bottom: 40px;
+  }
+
+
+  &__input {
+    border: none;
+    border-bottom: 1px solid #D4D4D4;
+
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    font-family: $regular;
+    outline: none;
+
+    &.active {
+    }
+
+    &::placeholder {
+      color: $color-green;
+    }
+
+    &:focus {
+      //border: 1px solid $color-blue;
+    }
+  }
+
+
+  &__label {
+    color: #A9A9A9;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.2s ease all;
+    z-index: 10;
+
+
+    &.active {
+      top: 0;
+      font-size: 10px;
+      color: $color-green;
+      background: white;
+      //padding-left: 8px;
+      //padding-right: 8px;
+    }
+  }
+
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    line-height: 0;
+    margin-bottom: 0;
+  }
+
+  &__icon2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 0;
+    margin-bottom: 0;
+    right: 44px;
+  }
+
+}
+
+
+.form-lead {
+  font-size: 12px;
+  font-family: $regular;
+  color: $color-black;
+}
+
+
+.add-form {
+
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+
+    & > div:nth-child(odd) {
+      margin-right: 20px;
+    }
+
+    & > div:nth-child(even) {
+      margin-left: 20px;
+    }
+  }
+
+
+  &__input {
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #D4D4D4;
+    box-shadow: none;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+
+    &:focus ~ span, &:not(:focus):valid ~ span {
+      top: -18px;
+      left: 0;
+      color: $color-green;
+    }
+  }
+
+  &__placeholder {
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    top: 13px;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    color: #A9A9A9;
+    cursor: text;
+  }
+
+  &__btn {
+    width: 210px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-white;
+    font-size: 14px;
+    border-radius: 14px;
+    border: none;
+    margin-right: 14px;
+  }
+
+}
+
+
+.pick-map {
+  position: absolute;
+  right: 0;
+  bottom: 9px;
+  color: $color-green;
+  cursor: pointer;
+
+
+  & > span {
+    padding-right: 12px;
+    position: relative;
+    font-family: $bold;
+    font-size: 14px;
+
+
+    &:before {
+      position: absolute;
+      content: url("../../../img/place.svg");
+      right: 0;
+    }
+  }
+
+}
+
+
+.form-link {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 48px;
+  text-align: end;
+
+  &__item {
+    color: #26A6A2;
+
+    &:hover {
+      color: #26A6A2;
+    }
+  }
+
+
+}

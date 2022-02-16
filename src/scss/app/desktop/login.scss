@@ -1,0 +1,26 @@
+.login {
+
+
+  &__logo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+
+.icon-login-name {
+
+  &:before {
+    content: "\e90c";
+    color: #7E8484;
+  }
+}
+
+
+.login-block {
+
+  padding: 35px 40px 44px 40px;
+  box-shadow: 0 17px 32px rgba(0, 143, 135, 0.13);
+  border-radius: 20px;
+
+}

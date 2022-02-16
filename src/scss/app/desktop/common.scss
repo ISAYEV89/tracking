@@ -1,0 +1,96 @@
+body {
+  font-family: $regular;
+  font-size: 16px;
+  color: $color-black;
+}
+
+
+.title-h1 {
+  font-size: 32px;
+
+
+  &--green {
+    color: $color-green;
+  }
+
+  &--mb {
+    margin-bottom: 30px;
+  }
+}
+
+.title-h2 {
+  font-family: $bold;
+  font-size: 24px;
+
+
+  &--mb {
+    margin-bottom: 33px;
+  }
+
+  &--green {
+    color: $color-green;
+  }
+}
+
+.title-h3 {
+  font-size: 16px;
+  color: $color-black;
+  margin-bottom: 0;
+
+  &--mr {
+    margin-right: 31px;
+  }
+}
+
+.title-h4 {
+  font-size: 14px;
+  font-family: $regular;
+  margin-bottom: 0;
+
+  &--mr {
+    margin-bottom: 4px;
+  }
+}
+
+.bg-black {
+  position: relative;
+  z-index: 100;
+  overflow: hidden;
+
+  &:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .24);
+    z-index: 101;
+  }
+}
+
+label.error {
+  position: absolute;
+  left: 0;
+  bottom: -16px;
+  color: red;
+  font-size: 12px;
+}
+
+
+.filter:focus {
+
+}
+
+
+.font-regular {
+  font-family: $regular !important;
+}
+
+.font-medium {
+  font-family: $medium !important;
+}
+
+.font-bold {
+  font-family: $bold !important;
+}
